@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("YOUR_PUBLIC_KEY"); 
+  })();
+</script>
+
+<body>
+<!-- CERTIFICATE VIEWER -->
+<div id="certModal" class="cert-modal">
+  <span class="close-btn" onclick="closeCert()">×</span>
+  <img id="certImage">
+  </div>
+
+<!--HEADER -->
+<header class="header">
+  <nav class="nav">
+    <div id="scrollBar"></div>
+    <h2 class="logo">MyPortfolio</h2> 
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#Projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+<a href="assests/CV/shahu_nikam_resume.pdf" download="Shahu_Nikam_Resume.pdf">
+ <button class="btn">Download CV</button>
+</a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+</header>
+
+<!--HERO -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h1>Hi, I'm <span class="highlight">SHAHU NIKAM</span></h1>
+    <h2>I am <span id="typing"></span><span class="cursor">|</span></h2>
+
+<div class="socials">
+
+  <a href="https://instagram.com/snikam_.45" target="_blank" data-name="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://wa.me/91983439083" target="_blank" data-name="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <a href="mailto:shahunikam2008@gmail.com" data-name="Email">
+    <i class="fas fa-envelope"></i>
+  </a>
+
+  <a href="https://github.com/shahu-nikam" target="_blank" data-name="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+
+  <a href="https://linkedin.com/in/shahu-nikam-08a568399" target="_blank" data-name="LinkedIn">
+    <i class="fab fa-linkedin"></i>
+  </a>
+
+</div>
+  </div>
+
+  <div class="hero-img">
+        <div class="circle">
+  <img src="assests/images/profile.png" alt="Profile" class="profile-img">
+  </div>
+  </div>
+</section>
+
+
+<br><br><br><br>
+<section id="about" class="section">
+    <h2 class="about-heading">
+    ABOUT <span>ME</span>
+  </h2>
+<div class="about-container">
+
+  <!-- LEFT SIDE -->
+  <div class="terminal-box">
+    <div class="terminal-top">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <p><span></span>I am</p>
+    <h3>SHAHU NIKAM</h3>
+
+    <p><span></span> status</p>
+    <h4>IT Diploma Student & Frontend Developer</h4>
+
+    <p><span></span> current_mission</p>
+    <h4>Building AI Vision Project For Visually Impaired</h4>
+
+    <p><span></span> tech_stack</p>
+
+    <div class="tech-stack">
+      <span>Python</span>
+      <span>Java</span>
+      <span>CPP</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>SQL</span>
+      <span>Power BI</span>
+      <span>Figma</span>
+
+    </div>
+
+  </div>
+
+  <!-- RIGHT SIDE -->
+<div class="journey-box">
+
+  <div class="journey-item">
+    <div class="dot"></div>
+
+    <div>
+<h3>10th Completed</h3>
+
+<p>
+ Completed SSC with
+<span class="journey-highlight">90%</span>
+and developed strong interest in technology.
+      </p>
+    </div>
+  </div>
+
+  <div class="journey-item">
+    <div class="dot"></div>
+
+    <div>
+      <h3>Diploma First Year</h3>
+
+      <p>
+        Completed first year with
+        <span class="journey-highlight">80%</span>
+        while learning programming and web development.
+      </p>
+    </div>
+  </div>
+
+  <div class="journey-item">
+    <div class="dot"></div>
+
+    <div>
+      <h3>Diploma Second Year</h3>
+
+      <p>
+        Achieved
+        <span class="journey-highlight">90%</span>
+        and built multiple real-world projects.
+      </p>
+    </div>
+  </div>
+
+  <div class="journey-item">
+    <div class="dot"></div>
+
+    <div>
+      <h3>Industry Internship</h3>
+
+      <p>
+        Completed internship at
+        <span class="journey-highlight">R3 System</span>
+        and gained real-world development experience.
+      </p>
+    </div>
+  </div>
+
+  <div class="journey-item">
+    <div class="dot"></div>
+
+<div>
+<h3>Hackathon GrandFinale 2025</h3>
+
+<p>
+Achieved
+<span class="journey-highlight">Runner-Up</span>
+ position by contributing to software and hardware innovation.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+</div></section>
+<br><br>
+
+<section id="skills">
+
+<h2 class="modern-title">
+  MY <span>SKILLS</span>
+</h2>
+<br>
+<p class="modern-subtitle">
+Here are some of the programming languages and technologies I'm learning and trying to become an expert at!
+</p>
+
+<div class="skills-pills">
+
+<div class="skill-pill">
+<i class="fab fa-html5"></i>
+<span>HTML</span>
+</div>
+
+<div class="skill-pill">
+<i class="fab fa-css3-alt"></i>
+<span>CSS</span>
+</div>
+
+<div class="skill-pill">
+<i class="fab fa-js"></i>
+<span>JS</span>
+</div>
+
+<div class="skill-pill">
+<i class="fab fa-java"></i>
+<span>JAVA</span>
+</div>
+
+<div class="skill-pill">
+<i class="fas fa-code"></i>
+<span>CPP</span>
+</div>
+
+
+<div class="skill-pill">
+<i class="fab fa-python"></i>
+<span>PYTHON</span>
+</div>
+
+<div class="skill-pill">
+<i class="fas fa-database"></i>
+<span>SQL</span>
+</div>
+
+<div class="skill-pill">
+    <i class="fas fa-chart-line"></i>
+    <span>DATA ANALYTICS</span>
+</div>
+<div class="skill-pill">
+<i class="fab fa-figma"></i>
+<span>Figma</span>
+</div>
+</div>
+</section>
+<br><br>
+<br><br>
+<br><br>
+
+<section id="Projects" class="section"><!-- ===== PROJECT SECTION ===== -->
+
+<center><h2 class="modern-title">
+  MY <span>PROJECTS</span>
+</h2></center>
+<br>
+  <div class="projects-container">
+
+    <!-- PROJECT 1 -->
+    <a href="https://github.com/shahu-nikam"
+       target="_blank"
+       class="project-card">
+
+<div class="project-live">
+
+  <img src="assests/projects/pot.png" alt="Project Preview">
+
+  <div class="live-overlay">
+    <span>VIEW PROJECT</span>
+  </div>
+
+</div>
+
+      <div class="project-info">
+
+        <h3>Portfolio Website</h3>
+
+        <div class="project-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div></div>
+
+    </a>
+
+
+
+    <!-- PROJECT 2 -->
+    <a href="https://github.com/shahu-nikam/Spaceshooter"
+       target="_blank"
+       class="project-card">
+
+<div class="project-live">
+
+  <img src="assests/projects/po.png" alt="Project Preview">
+
+  <div class="live-overlay">
+    <span>VIEW PROJECT</span>
+  </div>
+
+</div>
+      <div class="project-info">
+
+        <h3>space shooter Game</h3>
+
+        <div class="project-tags">
+          <span>Python</span>
+          <span>Sql</span>
+        </div></div>
+
+    </a>
+
+
+
+    <!-- PROJECT 3 -->
+    <a href="https://github.com/shahu-nikam"
+       target="_blank"
+       class="project-card">
+
+<div class="project-live">
+
+  <img src="assests/projects/por.png" alt="Project Preview">
+
+  <div class="live-overlay">
+    <span>VIEW PROJECT</span>
+  </div>
+
+</div>
+
+      <div class="project-info">
+
+        <h3>AI Manager(Jarvis)</h3>
+
+        <div class="project-tags">
+          <span>Python</span>
+          <span>Canvas</span>
+        </div></div>
+
+    </a>
+
+
+</div>
+     
+
+    </a>
+
+  </div>
+
+</section>
+<br>
+<br>
+<br>
+<section id="contact">
+
+    <div class="contact-title">
+        <h2>CONTACT <span>ME</span></h2>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-form-box">
+
+            <h3>Message me</h3>
+<form action="https://api.web3forms.com/submit" method="POST">
+
+<input type="hidden"
+name="access_key"
+value="91dd446a-02e3-4b31-a666-0130445f4784">
+
+<input type="hidden" name="subject"
+value="New Portfolio Message">
+
+    <div class="input-row">
+
+        <input type="text"
+        name="name"
+        placeholder="Your Name"
+        required>
+
+        <input type="email"
+        name="email"
+        placeholder="Your Email"
+        required>
+
+    </div>
+
+    <input type="text"
+    name="subject"
+    placeholder="Subject"
+    class="full-input"
+    required>
+
+    <textarea
+    name="message"
+    placeholder="Your Message"
+    required></textarea>
+
+    <button type="submit">Send Message</button>
+
+</form>
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <div class="contact-info">
+
+            <h3>Get in Touch</h3>
+
+            <p>
+                If you have any project idea or want to work together,
+                feel free to contact me anytime.
+            </p>
+
+            <!-- ITEM -->
+
+            <div class="info-item">
+                <i class="fas fa-user"></i>
+
+                <div>
+                    <h4>Name</h4>
+                    <span>Shahu Nikam</span>
+                </div>
+            </div>
+
+            <!-- ITEM -->
+
+            <div class="info-item">
+                <i class="fas fa-location-dot"></i>
+
+                <div>
+                    <h4>Address</h4>
+                    <span>AT Post Satana-423301</span>
+                </div>
+            </div>
+
+            <!-- ITEM -->
+
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+
+                <div>
+                    <h4>Email</h4>
+                    <span>shahunikam2008@gmail.com</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+  <div class="dou">© DOU: 23/06/2026 </div>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
