@@ -1,4 +1,28 @@
 
+// ===== HAMBURGER MENU =====
+function toggleMenu() {
+  const nav = document.getElementById("navLinks");
+  const hamburger = document.getElementById("hamburger");
+  nav.classList.toggle("open");
+  hamburger.classList.toggle("active");
+}
+
+function closeMenu() {
+  const nav = document.getElementById("navLinks");
+  const hamburger = document.getElementById("hamburger");
+  nav.classList.remove("open");
+  hamburger.classList.remove("active");
+}
+
+// Close menu when clicking outside
+document.addEventListener("click", function(e) {
+  const nav = document.getElementById("navLinks");
+  const hamburger = document.getElementById("hamburger");
+  if (nav && hamburger && !nav.contains(e.target) && !hamburger.contains(e.target)) {
+    nav.classList.remove("open");
+    hamburger.classList.remove("active");
+  }
+});
 
 const roles = ["Data Scientist","Power BI Analyst","Python Developer","UI/UX Designer","Game Developer"];
 let i = 0, j = 0;
@@ -30,31 +54,34 @@ type();
 
 const toggleBtn = document.getElementById("themeToggle");
 
-toggleBtn.onclick = () => {
-  document.body.classList.toggle("light-mode");
-
-  localStorage.setItem("theme", document.body.classList.contains("light-mode") ? "light" : "dark");
-};
+if (toggleBtn) {
+  toggleBtn.onclick = () => {
+    document.body.classList.toggle("light-mode");
+    localStorage.setItem("theme", document.body.classList.contains("light-mode") ? "light" : "dark");
+  };
+}
 
 // load saved theme
 if(localStorage.getItem("theme") === "light") {
   document.body.classList.add("light-mode");
 }
 const form = document.getElementById("contact-form");
-const status = document.getElementById("status");
 
-form.addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
-    .then(() => {
-      status.innerText = " Message sent!";
-      form.reset();
-    }, (error) => {
-      status.innerText = "TRY AGAIN";
-      console.error(error);
-    });
-});
+if (form) {
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+      .then(() => {
+        const status = document.getElementById("status");
+        if (status) status.innerText = " Message sent!";
+        form.reset();
+      }, (error) => {
+        const status = document.getElementById("status");
+        if (status) status.innerText = "TRY AGAIN";
+        console.error(error);
+      });
+  });
+}
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
